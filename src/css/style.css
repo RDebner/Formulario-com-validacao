@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+main {
+    background: url(../img/bg-repeat.jpg);
+    height: 100vh;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 440px;
+}
+
+.descricao h1 {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    color: #fff;
+    /* width: 450px; */
+    height: 60px;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.descricao p {
+    font-size: 22px;
+    color: #fff;
+}
+
+.formulario {
+    width: 30rem;
+    height: 32.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario input {
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formulario p {
+    padding-right: 210px;
+}
+
+input.mensagem {
+    height: 120px;
+    padding-bottom: 85px;
+}
+
+input.Enviar {
+    background-color: #3CCC87;
+    height: 40px;
+    color: #fff;
+}
+
+.borda {
+    border: 1px solid #000;
+}
+
+.verde {
+    border: 2px solid #00C22B;
+}
+
+.vermelha {
+    border: 2px solid red;
+}
+
+.esconder {
+    display: none;
+    padding: 0;
+}
+
+.campoObrigatorio {
+    color: #F52E2E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
