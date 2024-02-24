@@ -53,7 +53,7 @@ inputMensagem.addEventListener('change', function () {
 })
 
 
-function verificarInputs(trueorfalse) {
+function verificarInputs() {
     const inputNomeValue = inputNome.value.trim()
     const inputEmailValue = inputEmail.value.trim()
     const inputTelefoneValue = inputTelefone.value.trim()
@@ -89,24 +89,10 @@ function verificarInputs(trueorfalse) {
 }
 
 botaoEnviar.addEventListener('click', function (e) {
+
     verificarInputs()
 
-   
-
-    if (inputNome.classList.contains('vermelha')){
+    if (inputNome.classList.contains('vermelha') || inputEmail.classList.contains('vermelha') || inputMensagem.classList.contains('vermelha') || inputTelefone.classList.contains('vermelha')){
         e.preventDefault()
     }
-
-    if (inputEmail.classList.contains('vermelha')){
-        e.preventDefault()
-    }
-
-    if (inputMensagem.classList.contains('vermelha')){
-        e.preventDefault()
-    }
-
-    if (inputTelefone.classList.contains('vermelha')){
-        e.preventDefault()
-    }
-    
 })
